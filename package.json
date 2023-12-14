@@ -1,0 +1,53 @@
+{
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "repository": "your-org/@nuxt/scripts",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "pnpm -r dev:prepare && nuxi prepare ./playground",
+    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "lint": "eslint . --fix",
+    "build": "pnpm -r prepack",
+    "test": "vitest run",
+    "test:watch": "vitest watch"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "1.0.0-beta.29",
+    "@nuxt/devtools": "1.0.0",
+    "@nuxt/eslint-config": "^0.2.0",
+    "@nuxt/module-builder": "^0.5.2",
+    "@nuxt/schema": "^3.8.0",
+    "@nuxt/test-utils": "^3.8.0",
+    "@nuxt/ui": "^2.9.0",
+    "changelogen": "^0.5.5",
+    "eslint": "^8.52.0",
+    "nuxt": "^3.8.0",
+    "nuxt-icon": "^0.6.1",
+    "third-party-capital": "^1.0.25",
+    "vitest": "^0.34.6"
+  },
+  "resolutions": {
+    "@unhead/schema": "1.8.1",
+    "@unhead/shared": "1.8.1",
+    "@unhead/vue": "1.8.1",
+    "unhead": "1.8.1"
+  },
+  "dependencies": {
+    "vue3-google-map": "^0.18.0",
+    "vue3-youtube": "^0.1.9"
+  }
+}
