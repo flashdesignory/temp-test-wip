@@ -19,7 +19,7 @@ declare global {
 export function useGoogleMapsLoader(options: ThirdPartyScriptOptions<GoogleMapsLoaderOptions, GoogleMapsLoaderApi>) {
   return useScript<GoogleMapsLoaderApi>({
     'key': 'google-maps-loader',
-    //'async': true,
+    'async': true,
     'src': `https://maps.googleapis.com/maps/api/js?libraries=places&key=${options.apiKey}&callback=&callback=Function.prototype`,
 
   }, {
