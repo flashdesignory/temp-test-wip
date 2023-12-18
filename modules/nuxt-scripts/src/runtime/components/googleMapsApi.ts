@@ -41,7 +41,7 @@ export const GoogleMapsApi = defineComponent({
 
         const { $script } = useGoogleMapsLoader({
             apiKey: props.apiKey,
-            // trigger: "idle",
+            trigger: "idle",
             // skipEarlyConnections: true,
         })
 
