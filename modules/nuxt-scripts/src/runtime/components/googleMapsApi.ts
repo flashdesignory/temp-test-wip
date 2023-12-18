@@ -42,7 +42,7 @@ export const GoogleMapsApi = defineComponent({
         const { $script } = useGoogleMapsLoader({
             apiKey: props.apiKey,
             trigger: "idle",
-            skipEarlyConnections: true,
+            // skipEarlyConnections: true,
         })
 
         function createMap({ google, options }: { google: any, options: any }) {
