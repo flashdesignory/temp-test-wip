@@ -1,52 +1,8 @@
 <template>
   <div>
-    <div>
-      <YoutubeEmbed
-        videoid="rT1MTP-Rrt8"
-        playlabel="Play"
-      />
-    </div>
-    <div>
-      <YoutubeEmbed
-        videoid="rT1MTP-Rrt8"
-        playlabel="Play"
-      />
-    </div>
-    <div>
-      <YoutubeEmbed
-        videoid="rT1MTP-Rrt8"
-        playlabel="Play"
-      />
-    </div>
-    <div>
-      <YoutubeEmbed
-        videoid="rT1MTP-Rrt8"
-        playlabel="Play"
-      />
-    </div>
-    <div>
-      <YoutubeEmbed
-        videoid="rT1MTP-Rrt8"
-        playlabel="Play"
-      />
-    </div>
-    <div>
-      <YoutubeEmbed
-        videoid="rT1MTP-Rrt8"
-        playlabel="Play"
-      />
-    </div>
-    <div>
-      <YoutubeEmbed
-        videoid="rT1MTP-Rrt8"
-        playlabel="Play"
-      />
-    </div>
-    <div>
-      <YoutubeEmbed
-        videoid="rT1MTP-Rrt8"
-        playlabel="Play"
-      />
-    </div>
+    <YoutubeEmbed
+      videoid="rT1MTP-Rrt8"
+      playlabel="Play"
+    />
   </div>
 </template>
