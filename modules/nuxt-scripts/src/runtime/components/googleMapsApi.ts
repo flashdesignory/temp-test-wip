@@ -1,23 +1,6 @@
-import { defineComponent, h } from 'vue'
+import { defineComponent, h, ref } from 'vue'
 import { useGoogleMapsLoader } from '../thirdParties/googleMapsLoader'
 import { validateRequiredOptions } from '../util'
-
-function uuid() {
-    let uuid = "";
-    for (let i = 0; i < 32; i++) {
-        const random = (Math.random() * 16) | 0;
-        if (i === 8 || i === 12 || i === 16 || i === 20)
-            uuid += "-";
-
-        let currentNumber = random;
-        if (i === 12)
-            currentNumber = 4;
-        else if (i === 16)
-            currentNumber = 8 | (random & 3);
-        uuid += currentNumber.toString(16);
-    }
-    return uuid;
-}
 
 export const GoogleMapsApi = defineComponent({
     name: "GoogleMapsApi",
@@ -52,21 +35,25 @@ export const GoogleMapsApi = defineComponent({
       },
     setup(props) {
         const id = "google-maps-api"
-        const elementId = `google-maps-instance-${uuid()}}`;
-
         validateRequiredOptions(id, props, ['apiKey'])
+        const mapRef = ref();
 
         const { $script } = useGoogleMapsLoader({
             apiKey: props.apiKey,
             trigger: "idle",
-            // skipEarlyConnections: true,
+            skipEarlyConnections: true,
         })
 
         function createMap({ google, options }: { google: any, options: any }) {
-            const map = new google.maps.Map(document.getElementById(elementId), {
+            const mapDiv = document.createElement("div");
+            mapDiv.style.width = "100%";
+            mapDiv.style.height = "100%";
+            mapRef.value.appendChild(mapDiv);
+
+            const map = new google.maps.Map(mapDiv, {
                 ...options,
                 zoom: props.zoom,
-            });
+            });            
 
             return map;
         }
@@ -122,6 +109,6 @@ export const GoogleMapsApi = defineComponent({
             }
         });
 
-        return () => h('div', { class: 'google-maps-container', id: elementId, innerHTML: `${props.apiKey}`, style: {width: `${props.width}px`, height:  `${props.height}px`} })
+        return () => h('div', { class: 'google-maps-container', ref: mapRef, style: {width: `${props.width}px`, height:  `${props.height}px`} })
       },
 })
