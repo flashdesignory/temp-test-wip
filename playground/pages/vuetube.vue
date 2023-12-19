@@ -14,46 +14,62 @@ export default defineComponent({
 </script>
 
 <template>
+<div>
   <div>
     <YouTube
       ref="youtube"
       src="https://www.youtube.com/watch?v=rT1MTP-Rrt8"
       @ready="onReady"
     />
-    <YouTube
-      ref="youtube"
-      src="https://www.youtube.com/watch?v=rT1MTP-Rrt8"
-      @ready="onReady"
-    />
-    <YouTube
-      ref="youtube"
-      src="https://www.youtube.com/watch?v=rT1MTP-Rrt8"
-      @ready="onReady"
-    />
-    <YouTube
-      ref="youtube"
-      src="https://www.youtube.com/watch?v=rT1MTP-Rrt8"
-      @ready="onReady"
-    />
-    <YouTube
-      ref="youtube"
-      src="https://www.youtube.com/watch?v=rT1MTP-Rrt8"
-      @ready="onReady"
-    />
-    <YouTube
-      ref="youtube"
-      src="https://www.youtube.com/watch?v=rT1MTP-Rrt8"
-      @ready="onReady"
-    />
-    <YouTube
-      ref="youtube"
-      src="https://www.youtube.com/watch?v=rT1MTP-Rrt8"
-      @ready="onReady"
-    />
+  </div>
+  <div>
     <YouTube
       ref="youtube"
       src="https://www.youtube.com/watch?v=rT1MTP-Rrt8"
       @ready="onReady"
     />
   </div>
+  <div>
+    <YouTube
+      ref="youtube"
+      src="https://www.youtube.com/watch?v=rT1MTP-Rrt8"
+      @ready="onReady"
+    />
+  </div>
+  <div>
+    <YouTube
+      ref="youtube"
+      src="https://www.youtube.com/watch?v=rT1MTP-Rrt8"
+      @ready="onReady"
+    />
+  </div>
+  <div>
+    <YouTube
+      ref="youtube"
+      src="https://www.youtube.com/watch?v=rT1MTP-Rrt8"
+      @ready="onReady"
+    />
+  </div>
+  <div>
+    <YouTube
+      ref="youtube"
+      src="https://www.youtube.com/watch?v=rT1MTP-Rrt8"
+      @ready="onReady"
+    />
+  </div>
+  <div>
+    <YouTube
+      ref="youtube"
+      src="https://www.youtube.com/watch?v=rT1MTP-Rrt8"
+      @ready="onReady"
+    />
+  </div>
+  <div>
+    <YouTube
+      ref="youtube"
+      src="https://www.youtube.com/watch?v=rT1MTP-Rrt8"
+      @ready="onReady"
+    />
+  </div>
+</div>
 </template>

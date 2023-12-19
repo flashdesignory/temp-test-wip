@@ -8,62 +8,6 @@
     >
       <Marker :options="{ position: center }" />
     </GoogleMap>
-    <GoogleMap
-      api-key="AIzaSyCFj8Vni52FfC9L1zpzxqH3ViUPmioa-Dw"
-      style="width: 600px; height: 400px;"
-      :center="center"
-      :zoom="15"
-    >
-      <Marker :options="{ position: center }" />
-    </GoogleMap>
-    <GoogleMap
-      api-key="AIzaSyCFj8Vni52FfC9L1zpzxqH3ViUPmioa-Dw"
-      style="width: 600px; height: 400px;"
-      :center="center"
-      :zoom="15"
-    >
-      <Marker :options="{ position: center }" />
-    </GoogleMap>
-    <GoogleMap
-      api-key="AIzaSyCFj8Vni52FfC9L1zpzxqH3ViUPmioa-Dw"
-      style="width: 600px; height: 400px;"
-      :center="center"
-      :zoom="15"
-    >
-      <Marker :options="{ position: center }" />
-    </GoogleMap>
-    <GoogleMap
-      api-key="AIzaSyCFj8Vni52FfC9L1zpzxqH3ViUPmioa-Dw"
-      style="width: 600px; height: 400px;"
-      :center="center"
-      :zoom="15"
-    >
-      <Marker :options="{ position: center }" />
-    </GoogleMap>
-    <GoogleMap
-      api-key="AIzaSyCFj8Vni52FfC9L1zpzxqH3ViUPmioa-Dw"
-      style="width: 600px; height: 400px;"
-      :center="center"
-      :zoom="15"
-    >
-      <Marker :options="{ position: center }" />
-    </GoogleMap>
-    <GoogleMap
-      api-key="AIzaSyCFj8Vni52FfC9L1zpzxqH3ViUPmioa-Dw"
-      style="width: 600px; height: 400px;"
-      :center="center"
-      :zoom="15"
-    >
-      <Marker :options="{ position: center }" />
-    </GoogleMap>
-    <GoogleMap
-      api-key="AIzaSyCFj8Vni52FfC9L1zpzxqH3ViUPmioa-Dw"
-      style="width: 600px; height: 400px;"
-      :center="center"
-      :zoom="15"
-    >
-      <Marker :options="{ position: center }" />
-    </GoogleMap>
   </div>
 </template>
   
