@@ -13,7 +13,16 @@ export interface ConvertThirdPartyCapitalInput<T> {
 
 export function convertThirdPartyCapital<T>({ data, mainScriptKey, options, use }: ConvertThirdPartyCapitalInput<T>): ThirdPartyScriptApi<T> {
   const scripts = data.scripts ?? []
+  const stylesheets = data.stylesheets ?? []
   let response = null
+
+  for (const stylesheet of stylesheets) {
+    const id = stylesheet.substring(stylesheet.lastIndexOf("/") + 1);
+    $fetch.raw<string>(stylesheet, {}).then (response => {
+      const innerHTML = response._data || "";
+      useHead({ style: [{ innerHTML, id }] })
+    })
+  }
 
   for (const script of scripts) {
     if (isExternalScript(script)) {

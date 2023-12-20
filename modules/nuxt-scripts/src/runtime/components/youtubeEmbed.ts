@@ -49,7 +49,7 @@ export const YoutubeEmbed = defineComponent({
     /*************************** */
 
     if (process.client) {
-      const styles = (await $fetch.raw<string>('https://cdn.jsdelivr.net/gh/paulirish/lite-youtube-embed@master/src/lite-yt-embed.css', {}))._data || "";
+      /* const styles = (await $fetch.raw<string>('https://cdn.jsdelivr.net/gh/paulirish/lite-youtube-embed@master/src/lite-yt-embed.css', {}))._data || "";
       useHead({
         style: [
           {
@@ -57,7 +57,7 @@ export const YoutubeEmbed = defineComponent({
             id: 'lite-yt-embed-styles',
           },
         ],
-      })
+      }) */
 
       const { $script } = convertThirdPartyCapital({
         data: yt,
