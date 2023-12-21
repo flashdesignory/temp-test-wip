@@ -5,7 +5,6 @@
       width="600"
       height="400"
       :center="{lat: 40.6892494, lng: -74.04450039999999}"
-      q="Statue+of+Liberty"
     />
   </div>
 </template>

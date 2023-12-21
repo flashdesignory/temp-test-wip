@@ -110,5 +110,5 @@ export const GoogleMapsApi = defineComponent({
         });
 
         return () => h('div', { class: 'google-maps-container', ref: mapRef, style: {width: `${props.width}px`, height:  `${props.height}px`} })
-      },
+    },
 })
