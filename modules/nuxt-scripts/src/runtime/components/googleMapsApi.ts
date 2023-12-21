@@ -40,8 +40,8 @@ export const GoogleMapsApi = defineComponent({
 
         const { $script } = useGoogleMapsLoader({
             apiKey: props.apiKey,
-            trigger: "idle",
-            skipEarlyConnections: true,
+            // trigger: "idle",
+            // skipEarlyConnections: true,
         })
 
         function createMap({ google, options }: { google: any, options: any }) {
