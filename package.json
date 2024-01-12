@@ -35,7 +35,7 @@
     "@nuxt/ui": "^2.9.0",
     "changelogen": "^0.5.5",
     "eslint": "^8.52.0",
-    "nuxt": "^3.8.0",
+    "nuxt": "^3.9.1",
     "nuxt-icon": "^0.6.1",
     "third-party-capital": "^1.0.26",
     "vitest": "^0.34.6"
