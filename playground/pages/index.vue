@@ -123,6 +123,16 @@ function reset() {
               Youtube
             </ULink>
           </li>
+          <li>
+            <ULink to="/video/youtube-basic" class="underline">
+              Youtube iframe
+            </ULink>
+          </li>
+          <li>
+            <ULink to="/video/youtube-community" class="underline">
+              Youtube Community Module
+            </ULink>
+          </li>
         </ul>
       </div>
       <div>
@@ -133,6 +143,16 @@ function reset() {
           <li>
             <ULink to="/maps/google-maps" class="underline">
               Google Maps JavScript API
+            </ULink>
+          </li>
+          <li>
+            <ULink to="/maps/google-maps-basic" class="underline">
+              Google Maps iframe
+            </ULink>
+          </li>
+          <li>
+            <ULink to="/maps/google-maps-community" class="underline">
+              Google Maps Community Module
             </ULink>
           </li>
         </ul>
