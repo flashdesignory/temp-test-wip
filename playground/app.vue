@@ -15,7 +15,7 @@ head.hooks.hook('dom:rendered', () => {
 </script>
 
 <template>
-  <!-- <div class="flex flex-col min-h-screen">
+  <div class="flex flex-col min-h-screen">
     <header class="sticky top-0 z-50 w-full backdrop-blur flex-none border-b border-gray-900/10 dark:border-gray-50/[0.06] bg-white/75 dark:bg-gray-900/75">
       <UContainer class="py-3">
         <div class="flex items-center justify-between">
@@ -50,8 +50,5 @@ head.hooks.hook('dom:rendered', () => {
         </div>
       </UContainer>
     </main>
-  </div> -->
-  <div>
-    <NuxtPage />
   </div>
 </template>
