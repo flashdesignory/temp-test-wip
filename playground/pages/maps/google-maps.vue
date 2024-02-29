@@ -1,13 +1,3 @@
-<script setup>
-import { ref } from 'vue'
-
-const query = ref('Statue+of+Liberty')
-
-function changeQuery() {
-  query.value = 'Brooklyn+Bride,New+York+NY'
-}
-</script>
-
 <template>
   <div>
     <div>
@@ -15,33 +5,8 @@ function changeQuery() {
         api-key="AIzaSyCFj8Vni52FfC9L1zpzxqH3ViUPmioa-Dw"
         width="600"
         height="400"
-        :q="query"
+        :center="{ lat: 40.689247, lng: -74.044502 }"
       />
-    </div>
-    <div class="button-container">
-      <button
-        class="button"
-        @click="changeQuery"
-      >
-        change query
-      </button>
     </div>
   </div>
 </template>
-
-<style>
-.button-container {
-  margin: 20px 0;
-}
-
-.button {
-  background-color: orange;
-  border-radius: 8px;
-  padding: 4px 8px;
-  cursor: pointer;
-}
-
-.button:not(:last-child) {
-  margin-right: 8px;
-}
-</style>
