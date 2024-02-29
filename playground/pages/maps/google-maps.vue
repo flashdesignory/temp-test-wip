@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const query = ref('Space+Needle,Seattle+WA')
+const query = ref('Statue+of+Liberty')
 
 function changeQuery() {
   query.value = 'Brooklyn+Bride,New+York+NY'
