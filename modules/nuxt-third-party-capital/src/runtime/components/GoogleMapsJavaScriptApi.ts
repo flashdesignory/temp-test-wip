@@ -117,6 +117,8 @@ function createMapWithCenter({ zoom, center, mapRef }: CreateMapWithCenterInput)
     mapRef,
   })
 
+  createMarker({ position: center, map })
+
   return ({ map })
 }
 
