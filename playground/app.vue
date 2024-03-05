@@ -32,20 +32,8 @@ head.hooks.hook('dom:rendered', () => {
     <main class="min-h-full h-full flex-grow">
       <UContainer class="mt-10">
         <div class="grid grid-cols-4">
-          <div class="col-span-3">
+          <div class="col-span-6">
             <NuxtPage />
-          </div>
-          <div class="col-span-1">
-            <h2 class="text-xl font-bold">
-              Unhead Scripts
-            </h2>
-            <div>
-              <ul>
-                <li v-for="(script, key) of scripts" :key="key">
-                  {{ script.key }}:{{ script.status }}
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </UContainer>
